@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La-Z-Boy Sales Excellence | Quick Reference Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F6F0F0;
+            color: #363038;
+            margin: 0;
+            padding: 0;
+        }
+
+        .brand-gradient {
+            background: linear-gradient(135deg, #7B189F 0%, #5a1275 100%);
+        }
+
+        /* Wayfair / La-Z-Boy Brand Palette */
+        .bg-primary { background-color: #7B189F; }
+        .text-primary { color: #7B189F; }
+        .bg-soft-purple { background-color: #FAF2FF; }
+        .border-accent { border-color: #F2DEFF; }
+
+        /* Screenshot Optimization */
+        .content-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 48px 24px;
+        }
+
+        .feature-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px -8px rgba(123, 24, 159, 0.15);
+        }
+
+        .status-amber { background-color: #FFFBEB; border-color: #FDE68A; color: #92400E; }
+        .status-emerald { background-color: #ECFDF5; border-color: #A7F3D0; color: #065F46; }
+        
+        /* Custom scrollbar for clean look */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #F6F0F0; }
+        ::-webkit-scrollbar-thumb { background: #7B189F; border-radius: 10px; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Hero / Brand Header -->
+    <header class="brand-gradient text-white py-16 px-6">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+            <div class="space-y-4 text-center md:text-left">
+                <div class="inline-flex items-center gap-2 px-3 py-1 bg-white/20 rounded-full text-[10px] font-black uppercase tracking-[0.2em]">
+                    <i data-lucide="award" class="w-3 h-3"></i> Learning Excellence
+                </div>
+                <h1 class="text-5xl md:text-6xl font-black tracking-tighter leading-none">
+                    La-Z-Boy<br/><span class="text-purple-300">Quick Reference</span>
+                </h1>
+                <p class="text-purple-100 text-lg opacity-90 max-w-lg leading-relaxed">
+                    The authoritative guide for winning floor interactions through product knowledge and brand heritage.
+                </p>
+            </div>
+            <div class="bg-white/10 border border-white/20 p-8 rounded-[2.5rem] backdrop-blur-md hidden md:block">
+                <div class="flex items-center gap-4">
+                    <div class="p-4 bg-white rounded-2xl text-primary">
+                        <i data-lucide="history" class="w-8 h-8"></i>
+                    </div>
+                    <div>
+                        <p class="text-sm font-bold uppercase tracking-wider text-purple-200">Established</p>
+                        <p class="text-3xl font-black">1927</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="content-container">
+        
+        <!-- Brand Advantage Row -->
+        <section class="mb-16">
+            <div class="flex items-center gap-4 mb-8">
+                <h2 class="text-3xl font-black tracking-tight">The Brand Advantage</h2>
+                <div class="h-px flex-1 bg-gray-200"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-8 rounded-[2rem] border border-accent feature-card">
+                    <div class="w-12 h-12 bg-soft-purple rounded-xl flex items-center justify-center text-primary mb-6">
+                        <i data-lucide="crown"></i>
+                    </div>
+                    <h3 class="text-xl font-extrabold mb-3">Category Leader</h3>
+                    <p class="text-sm text-gray-500 leading-relaxed">The de facto name for recliners. Synonymous with quality, heritage, and American comfort innovation.</p>
+                </div>
+                <div class="bg-white p-8 rounded-[2rem] border border-accent feature-card">
+                    <div class="w-12 h-12 bg-soft-purple rounded-xl flex items-center justify-center text-primary mb-6">
+                        <i data-lucide="hammer"></i>
+                    </div>
+                    <h3 class="text-xl font-extrabold mb-3">Built to Last</h3>
+                    <p class="text-sm text-gray-500 leading-relaxed">Hand-assembled precision. Every chair features hand-cut frames and machine-cut mechanical components.</p>
+                </div>
+                <div class="bg-white p-8 rounded-[2rem] border border-accent feature-card">
+                    <div class="w-12 h-12 bg-soft-purple rounded-xl flex items-center justify-center text-primary mb-6">
+                        <i data-lucide="shield"></i>
+                    </div>
+                    <h3 class="text-xl font-extrabold mb-3">Superior Warranty</h3>
+                    <p class="text-sm text-gray-500 leading-relaxed">Peace of mind for life. Lifetime coverage on wood and metal parts for the original purchaser.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Differentiators -->
+        <section class="mb-16">
+            <div class="flex items-center gap-4 mb-8">
+                <h2 class="text-3xl font-black tracking-tight">"La-Z-Boy Only" Features</h2>
+                <div class="h-px flex-1 bg-gray-200"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <div class="bg-soft-purple p-8 rounded-[2rem] border border-accent flex gap-6 items-start group">
+                    <div class="p-4 bg-white rounded-2xl text-primary shadow-sm group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                        <i data-lucide="refresh-cw" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold mb-2">Independent Back & Recline</h4>
+                        <p class="text-sm text-gray-600 leading-relaxed">The only chair that allows the back to recline without engaging the footrest, enabling a simultaneous "rock and recline" motion.</p>
+                    </div>
+                </div>
+
+                <div class="bg-soft-purple p-8 rounded-[2rem] border border-accent flex gap-6 items-start group">
+                    <div class="p-4 bg-white rounded-2xl text-primary shadow-sm group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                        <i data-lucide="user-check" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold mb-2">Total Lumbar Support</h4>
+                        <p class="text-sm text-gray-600 leading-relaxed">As the back reclines, the seat shifts forward to fill the lower back gap, maintaining support in any seated or reclined position.</p>
+                    </div>
+                </div>
+
+                <div class="bg-soft-purple p-8 rounded-[2rem] border border-accent flex gap-6 items-start group">
+                    <div class="p-4 bg-white rounded-2xl text-primary shadow-sm group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                        <i data-lucide="lock" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold mb-2">3-Position Locking Footrest</h4>
+                        <p class="text-sm text-gray-600 leading-relaxed">Controlled by a manual handle. It locks securely into 3 positions for safety and ease of use, unlike standard spring mechanisms.</p>
+                    </div>
+                </div>
+
+                <div class="bg-soft-purple p-8 rounded-[2rem] border border-accent flex gap-6 items-start group">
+                    <div class="p-4 bg-white rounded-2xl text-primary shadow-sm group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                        <i data-lucide="activity" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold mb-2">16-Position Tilt Ratchet</h4>
+                        <p class="text-sm text-gray-600 leading-relaxed">A unique system allows users to customize the pitch of the chair; allows elevation of feet above the heart level.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Technical Specs Table -->
+        <section class="mb-16">
+            <div class="bg-white rounded-[2.5rem] border border-accent shadow-sm overflow-hidden">
+                <div class="bg-primary p-6 flex items-center justify-between">
+                    <h3 class="text-white font-black uppercase tracking-widest text-sm flex items-center gap-2">
+                        <i data-lucide="list" class="w-4 h-4"></i> Technical Specifications
+                    </h3>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left">
+                        <thead>
+                            <tr class="bg-gray-50 border-b border-gray-100">
+                                <th class="p-6 text-[10px] font-black uppercase text-gray-400 tracking-widest">Core Feature</th>
+                                <th class="p-6 text-[10px] font-black uppercase text-gray-400 tracking-widest">Customer-Facing Benefits</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y border-gray-100">
+                            <tr class="hover:bg-soft-purple/30 transition-colors">
+                                <td class="p-6 font-bold text-gray-900 w-1/3">Weight Testing</td>
+                                <td class="p-6 text-sm text-gray-600">Standard chairs are industry-tested to 300 lbs for maximum durability.</td>
+                            </tr>
+                            <tr class="hover:bg-soft-purple/30 transition-colors">
+                                <td class="p-6 font-bold text-gray-900 w-1/3">Foam Density</td>
+                                <td class="p-6 text-sm text-gray-600">Standard 1.8 PCF; XL models use 2.5 PCF for long-lasting firmness.</td>
+                            </tr>
+                            <tr class="hover:bg-soft-purple/30 transition-colors">
+                                <td class="p-6 font-bold text-gray-900 w-1/3">iClean™ Fabric</td>
+                                <td class="p-6 text-sm text-gray-600">Nano-technology treatment that repels water-based stains instantly.</td>
+                            </tr>
+                            <tr class="hover:bg-soft-purple/30 transition-colors">
+                                <td class="p-6 font-bold text-gray-900 w-1/3">Power Options</td>
+                                <td class="p-6 text-sm text-gray-600">Multi-motor systems (up to 4 motors) for independent headrest and lumbar control.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Troubleshooting / Objections -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-black tracking-tight mb-8">Objections & Troubleshooting</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                
+                <div class="p-6 bg-white border border-accent rounded-3xl flex gap-5 items-start">
+                    <div class="px-2 py-1 bg-amber-100 text-amber-700 text-[9px] font-black rounded uppercase">Advice</div>
+                    <div>
+                        <h5 class="font-bold text-gray-900 mb-1">"The chair feels loose"</h5>
+                        <p class="text-sm text-gray-500">Explain the "pad-over-chaise" design necessity—loose fabric prevents tearing during motion.</p>
+                    </div>
+                </div>
+
+                <div class="p-6 bg-white border border-accent rounded-3xl flex gap-5 items-start">
+                    <div class="px-2 py-1 bg-amber-100 text-amber-700 text-[9px] font-black rounded uppercase">Fix</div>
+                    <div>
+                        <h5 class="font-bold text-gray-900 mb-1">"The footrest won't close"</h5>
+                        <p class="text-sm text-gray-500">Verify user is reaching the 3rd (highest) click before attempting to pull it down.</p>
+                    </div>
+                </div>
+
+                <div class="p-6 bg-white border border-accent rounded-3xl flex gap-5 items-start">
+                    <div class="px-2 py-1 bg-amber-100 text-amber-700 text-[9px] font-black rounded uppercase">Advice</div>
+                    <div>
+                        <h5 class="font-bold text-gray-900 mb-1">"The back is too hard to move"</h5>
+                        <p class="text-sm text-gray-500">Show user the tension-adjustment wing nuts located directly beneath the mechanism.</p>
+                    </div>
+                </div>
+
+                <div class="p-6 bg-white border border-accent rounded-3xl flex gap-5 items-start">
+                    <div class="px-2 py-1 bg-amber-100 text-amber-700 text-[9px] font-black rounded uppercase">Fix</div>
+                    <div>
+                        <h5 class="font-bold text-gray-900 mb-1">"Remote is unresponsive"</h5>
+                        <p class="text-sm text-gray-500">Check the side-pocket holster; the "safety lock" switch may be accidentally toggled.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Pro Tip Footer -->
+        <footer class="mt-20">
+            <div class="bg-primary p-12 rounded-[3rem] text-white flex flex-col md:flex-row items-center gap-8 relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -mr-20 -mt-20"></div>
+                <div class="bg-white/20 p-6 rounded-[2rem] backdrop-blur-sm shrink-0">
+                    <i data-lucide="lightbulb" class="w-12 h-12"></i>
+                </div>
+                <div class="space-y-2">
+                    <h4 class="text-2xl font-black">Winning the Floor Recommendation</h4>
+                    <p class="text-purple-100 text-sm leading-relaxed max-w-2xl italic">
+                        "Focus on the 'Rock and Recline' feature. No other brand on your floor can recline the back while maintaining a rocking motion. It's our unique competitive advantage—demonstrate it first, and let the customer feel the difference."
+                    </p>
+                </div>
+            </div>
+            <div class="text-center mt-12 text-gray-400 text-xs font-medium tracking-widest uppercase">
+                &copy; 2024 La-Z-Boy Internal Training | Confidential Reference Document
+            </div>
+        </footer>
+
+    </main>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
